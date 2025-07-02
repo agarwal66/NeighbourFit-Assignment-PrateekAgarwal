@@ -6,7 +6,6 @@ import {
   X, Search, Github, Linkedin, Frown, Sun, Moon
 } from "lucide-react";
 
-// --- Preferences List for Bento Grid ---
 const preferencesList = [
   { key: "safety", label: "Safety", icon: <Shield className="w-7 h-7 mb-2" /> },
   { key: "cafes", label: "Cafes", icon: <Coffee className="w-7 h-7 mb-2" /> },
@@ -75,7 +74,6 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-900 transition-colors duration-500 relative">
-      {/* --- Animated Aurora Background --- */}
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-green-300 to-purple-400 opacity-60 blur-3xl animate-[aurora_12s_ease-in-out_infinite]" />
         <style>{`
@@ -86,8 +84,6 @@ export default function HomePage() {
           }
         `}</style>
       </div>
-
-      {/* --- Sidebar Navigation --- */}
       <aside className="fixed top-0 left-0 h-full w-20 flex flex-col items-center bg-white/80 dark:bg-neutral-950/80 shadow-xl z-40 pt-6 gap-6">
         <button
           className="p-3 rounded-full bg-gradient-to-br from-blue-600 to-green-500 shadow-lg mb-5"
@@ -103,8 +99,6 @@ export default function HomePage() {
           <Linkedin className="w-6 h-6 text-gray-500 dark:text-gray-400 hover:text-blue-500" />
         </a>
       </aside>
-
-      {/* --- Full-page Hero with 3D/Illustration and CTA --- */}
       <section className="ml-20 pt-12 pb-8 px-8 flex flex-col md:flex-row items-center gap-10 bg-transparent">
         <div className="flex-1 text-left">
           <h1 className="text-5xl md:text-7xl font-black text-blue-700 dark:text-green-300 mb-6 leading-tight">
@@ -131,7 +125,6 @@ export default function HomePage() {
             </button>
           </div>
         </div>
-        {/* --- 3D/Illustration Placeholder --- */}
         <div className="flex-1 flex items-center justify-center">
           <div className="w-72 h-72 bg-gradient-to-br from-blue-400 via-green-200 to-purple-300 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden">
             <span className="text-[7rem]">🏙️</span>
@@ -139,8 +132,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* --- Bento Grid Preferences --- */}
       <section className="ml-20 px-8 py-10">
         <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-100">Choose Your Preferences</h2>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
@@ -160,8 +151,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
-      {/* --- Search, Sort, and Results (Storytelling Scroll) --- */}
       <section className="ml-20 px-8 py-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
           <div className="flex items-center gap-3 w-full md:w-auto">
@@ -190,8 +179,6 @@ export default function HomePage() {
             </select>
           </div>
         </div>
-
-        {/* --- Results with Parallax/Scroll Animation --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[200px]">
           {loading ? (
             <div className="col-span-full flex flex-col items-center justify-center h-full py-16">
@@ -235,7 +222,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* --- Footer with Minimalist Info --- */}
       <footer className="ml-20 px-8 py-8 bg-white/70 dark:bg-neutral-950/80 border-t border-blue-100 dark:border-neutral-800 shadow-inner">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between text-base text-gray-500 dark:text-gray-400">
           <div className="flex items-center gap-2 mb-2 md:mb-0">
