@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Sector 18, Noida",
+    "safety": 9,
+    "cafes": 8,
+    "parks": 6,
+    "schools": 7,
+    "publicTransport": 9
+  },
+  {
+    "name": "Saket, Delhi",
+    "safety": 7,
+    "cafes": 9,
+    "parks": 5,
+    "schools": 6,
+    "publicTransport": 8
+  },
+  {
+    "name": "Kormangala, Bangalore",
+    "safety": 8,
+    "cafes": 10,
+    "parks": 6,
+    "schools": 6,
+    "publicTransport": 7
+  },
+  {
+    "name": "Banjara Hills, Hyderabad",
+    "safety": 8,
+    "cafes": 7,
+    "parks": 7,
+    "schools": 8,
+    "publicTransport": 6
+  },
+  {
+    "name": "Alkapuri, Vadodara",
+    "safety": 9,
+    "cafes": 5,
+    "parks": 8,
+    "schools": 7,
+    "publicTransport": 6
+  }
+]
